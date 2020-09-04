@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- Learn more about this tag here: https://www.w3schools.com/css/css_rwd_viewport.asp -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Learn more about this tag here: https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/jj676915(v=vs.85)?redirectedfrom=MSDN -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Minified bootstrap css  -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <title>Deep Link Test</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron text-center">
+        <a href="/" class="text-dark"
+          ><h1 class="text-center">
+            Deeplinks
+          </h1></a
+        >
+        <p>Testing out deeplinks...</p>
+      </div>
+      <div class="input-form">
+        <label>Name</label>
+        <input
+          type="text"
+          id="inputname"
+          placeholder="ex. WhatsApp Deeplink"
+          class="form-control"
+        />
+        <label>Deeplink URL</label>
+        <input
+          id="input"
+          type="text"
+          placeholder="ex. deeplink://"
+          class="form-control"
+        />
+        <button id="submitButton" class="btn btn-primary my-2">Submit</button>
+      </div>
+      <h5 class="pt-4">
+        Deeplinks
+      </h5>
+      <div id="listOfDeeplinks" class="list-group pb-4">
+        <p>Add some Deeplinks.</p>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
